@@ -1,0 +1,75 @@
+.header {
+    background-color: $bgColor;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        @include adaptiveValue("margin-right", 218, 50);
+        @include adaptiveValue("font-size", 30, 20);
+
+        span {
+            background-image: linear-gradient(to right, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-box-decoration-break: clone;
+        }
+    }
+
+    &__navigation {
+    }
+
+    &__socials {
+    }
+}
+.logo {
+
+    &__img {
+    }
+}
+.navigation {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        @include adaptiveValue("gap", 98, 30);
+    }
+
+    &__item {
+    }
+
+    &__link {
+        @include adaptiveValue("font-size", 30, 20);
+        @include adaptiveValue("padding-top", 46, 23);
+        @include adaptiveValue("padding-bottom", 46, 23);
+        transition: color 0.3s ease;
+        &:hover {
+            color: #13ADC7;
+        }
+    }
+}
+.socials {
+    margin-left: auto;
+    display: flex;
+    @include adaptiveValue("gap", 30, 20);
+    &__item {
+    }
+
+    &__link {
+        
+        &:hover {
+            .socials__icon {
+                fill: #13ADC7;
+            }
+        }
+    }
+
+    &__icon {
+        fill: $mainColor;
+        transition: fill 0.3s ease;
+    }
+}

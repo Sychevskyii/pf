@@ -9,10 +9,12 @@
 			width: 100%;
 			height: 100%;
 			left: -100%;
-			top: 0;
+			top: 49px;
 			overflow: auto;
 			padding: toRem(50) toRem(15) toRem(15) toRem(30);
 			transition: left 0.3s;
+			background-color: $bgColor;
+			
 			&::before {
 				content: "";
 				position: fixed;
@@ -21,7 +23,7 @@
 				left: -100%;
 				top: 0;
 				transition: left 0.3s;
-				z-index: 2;
+				z-index: 2;	
 			}
 			.menu-open & {
 				left: 0;
@@ -53,7 +55,7 @@
 		display: block;
 		position: relative;
 		width: toRem(30);
-		height: toRem(18);
+		height: toRem(22);
 		z-index: 5;
 		@media (any-hover: none) {
 			cursor: default;
@@ -66,8 +68,8 @@
 			right: 0;
 			position: absolute;
 			width: 100%;
-			height: toRem(2);
-			background-color: #000;
+			height: toRem(3);
+			background-color: #fff;
 		}
 		&::before {
 			top: 0;

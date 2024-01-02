@@ -1,3 +1,164 @@
 //====================================================================================================
-
+// Section hero
 //====================================================================================================
+.hero {
+    background-color: $bgColor;
+    &__container {
+        @include adaptiveValue("padding-top", 255, 100);
+        @include adaptiveValue("padding-bottom", 255, 100);
+        position: relative;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Poppins;
+        @include adaptiveValue("font-size", 64, 30);
+        font-weight: 600;
+        @include adaptiveValue("margin-bottom", 40, 20);
+    }
+
+    &__text {
+        color: #BCBCBC;
+        font-family: Poppins;
+        @include adaptiveValue("font-size", 36, 20);
+        font-weight: 600;
+        @include adaptiveValue("width", 980, 280);
+        @include adaptiveValue("margin-bottom", 63, 30);
+    }
+}
+.btn {
+    padding: 20px 64px;
+    border-radius: 83px;
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+}
+.net {
+    position: absolute;
+    right: -290px;
+    top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 610px;
+    transform: rotate(45deg);
+    &__cell {
+        display: block;
+        height: 100px;
+    }
+
+    &__cell--small {
+        width: 100px;
+    }
+
+    &__cell--middle {
+        width: 160px;
+    }
+
+    &__cell--big {
+        width: 200px;
+    }
+
+    &__cell--1 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        opacity: 0;
+        transform: translateY(-100%);
+        animation: show_border 1s ease-in 1;
+    }
+
+    &__cell--2 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        opacity: 0;
+        transform: translateY(-100%);
+        animation: show_border 1.2s ease-in 1;
+    }
+
+    &__cell--3 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        opacity: 0;
+        transform: translateY(-100%);
+        animation: show_border 1.4s ease-in 1;
+    }
+
+    &__cell--4 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-right: 1px solid #505685;
+        opacity: 0;
+        transform: translateY(-100%);
+        animation: show_border 1.6s ease-in 1;
+    }
+
+    &__cell--5 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+    }
+
+    &__cell--6 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+    }
+
+    &__cell--7 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-right: 1px solid #505685;
+    }
+
+    &__cell--8 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+    }
+
+    &__cell--9 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+    }
+
+    &__cell--10 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+    }
+
+    &__cell--11 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-right: 1px solid #505685;
+    }
+
+    &__cell--12 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-bottom: 1px solid #505685;
+    }
+
+    &__cell--13 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-bottom: 1px solid #505685;
+    }
+
+    &__cell--14 {
+        border-top: 1px solid #505685;
+        border-left: 1px solid #505685;
+        border-right: 1px solid #505685;
+        border-bottom: 1px solid #505685;
+    }
+
+    @keyframes show_border {
+        0% {transform: translateY(-90%); opacity: 0.1;}
+        10% {transform: translateY(-80%); opacity: 0.2;}
+        20% {transform: translateY(-70%); opacity: 0.3;}
+        30% {transform: translateY(-60%); opacity: 0.4;}
+        40% {transform: translateY(-50%); opacity: 0.5;}
+        50% {transform: translateY(-40%); opacity: 0.6;}
+        60% {transform: translateY(-30%); opacity: 0.7;}
+        70% {transform: translateY(-20%); opacity: 0.8;}
+        80% {transform: translateY(-10%); opacity: 0.9;}
+        90% {transform: translateY(-5%); opacity: 0.95;}
+        100% {transform: translateY(0%); opacity: 1;}
+    }
+}
+
+
+

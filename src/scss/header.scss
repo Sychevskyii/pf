@@ -53,6 +53,7 @@
 .menu {
     
     &__icon {
+        z-index: 11;
     }
 
     &__body {
@@ -64,6 +65,7 @@
         @media (max-width: 767.98px) {
             flex-direction: column;
             justify-content: flex-start;
+            z-index: 10;
         }
     }
 

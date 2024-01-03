@@ -9,7 +9,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1750px;
+    }
+
+    &__block {
+        @include adaptiveValue("width", 980, 280);
+        @media (max-width: 767.98px) {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -26,50 +32,73 @@
         font-family: Poppins;
         @include adaptiveValue("font-size", 36, 20);
         font-weight: 600;
-        @include adaptiveValue("width", 980, 280);
         @include adaptiveValue("margin-bottom", 63, 30);
         animation-duration: 1600ms;
     }
 }
 .btn {
-    padding: 20px 64px;
+    @include adaptiveValue("padding-top", 20, 15);
+    @include adaptiveValue("padding-bottom", 20, 15);
+    @include adaptiveValue("font-size", 28, 18);
+    padding-right: 64px;
+    padding-left: 64px;
     border-radius: 83px;
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
     animation-duration: 2000ms;
+
+    &--small {
+        @include adaptiveValue("font-size", 20, 16);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include adaptiveValue("padding-right", 52, 25);
+        @include adaptiveValue("padding-left", 52, 25);
+    }
+
+    @media (max-width: 767.98px) {
+        width: 100%;   
+    }
 }
 
 .main-img {
-    width: 700px;
+    @include adaptiveValue("width", 700, 240);
     position: absolute;
-    left: -172px;
-    top: -60px;
+    top: 50%;
+    left: 50%;
     z-index: 2;
-    transform: rotate(-55deg);
+    transform: translate(-50%, -50%) rotate(-55deg);
+    padding-bottom: 130px;
     filter: drop-shadow(7px 7px 15px #6978D1);
     animation-duration: 600ms;
+    @media (max-width: 767.98px) {
+        right: -5px;
+        bottom: -5px;
+    }
 }
 
 .net {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 610px;
+    @include adaptiveValue("width", 610, 305);
     transform: rotate(55deg);
+    @media (max-width: 767.98px) {
+        display: none;
+    }
     &__cell {
         display: block;
-        height: 100px;
+        @include adaptiveValue("height", 100, 25);
     }
 
     &__cell--small {
-        width: 100px;
+        // @include adaptiveValue("width", 100, 50);
     }
 
     &__cell--middle {
-        width: 160px;
+        // @include adaptiveValue("width", 160, 80);
     }
 
     &__cell--big {
-        width: 200px;
+        // @include adaptiveValue("width", 200, 100);
     }
 
     &__cell--1 {
@@ -79,6 +108,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 1140ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--2 {
@@ -88,6 +119,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 1425ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--3 {
@@ -97,6 +130,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 1710ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--4 {
@@ -107,6 +142,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 1995ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--5 {
@@ -116,6 +153,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 3050ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--6 {
@@ -125,6 +164,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 585ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 200, 80);
     }
 
     &__cell--7 {
@@ -135,6 +176,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 2280ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--8 {
@@ -144,6 +187,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 3000ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--9 {
@@ -153,6 +198,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 670ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 // 285
     &__cell--10 {
@@ -162,6 +209,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 855ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--11 {
@@ -172,6 +221,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 2565ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--12 {
@@ -182,6 +233,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 2950ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--13 {
@@ -192,6 +245,8 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 2900ms;
+        flex-grow: 2;
+        @include adaptiveValue("flex-basis", 200, 80);
     }
 
     &__cell--14 {
@@ -203,7 +258,86 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
         animation-duration: 2850ms;
+        flex-grow: 1;
+        @include adaptiveValue("flex-basis", 160, 55);
     }
+}
+//====================================================================================================
+// Section hero
+//====================================================================================================
+.projects {
+    background-color: $bgColor;
+    &__container {
+    }
+
+    &__title {
+        @include adaptiveValue("font-size", 64, 32);
+        font-weight: 600;
+        @include adaptiveValue("margin-bottom", 118, 40);
+    }
+
+    &__list {
+    }
+}
+.list-project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    @include adaptiveValue("gap", 220, 50);
+    &__item {
+        @include adaptiveValue("width", 550, 225);
+        border: 1px solid #fff;
+        padding: 25px;
+        box-shadow: 0px 0px 12px 0px #FFF;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            .list-project__img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__img-cnt {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in;
+        width: 100%;
+    }
+
+    &__label {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        text-align: center;
+        @include adaptiveValue("width", 300, 150);
+        @include adaptiveValue("font-size", 36, 20);
+        font-weight: 600;
+        line-height: 2; 
+        border-bottom: 4px solid transparent;
+        background-image: linear-gradient(#0F1624, #0F1624), radial-gradient(circle at bottom left, #13ADC7,#6978D1, #945DD6);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 28, 16);
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+}
+.btn {
 }
 
 

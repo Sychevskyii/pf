@@ -74,7 +74,7 @@
           <div class="projects__container">
             <h2 class="projects__title">Projects</h2>
             <ul class="projects__list list-project">
-              <li class="list-project__item">
+              <li class="list-project__item animate__animated wow animate__fadeInLeft" data-wow-delay="250ms">
                 <a href="#" class="list-project__link">
                   <div class="list-project__img-cnt">
                     <img
@@ -92,7 +92,7 @@
                   <button class="btn btn--small">Look it up</button>
                 </a>
               </li>
-              <li class="list-project__item">
+              <li class="list-project__item animate__animated wow animate__fadeInRight" data-wow-delay="500ms">
                 <a href="#" class="list-project__link">
                   <div class="list-project__img-cnt">
                     <img
@@ -110,7 +110,7 @@
                   <button class="btn btn--small">Look it up</button>
                 </a>
               </li>
-              <li class="list-project__item">
+              <li class="list-project__item animate__animated wow animate__fadeInLeft" data-wow-delay="500ms">
                 <a href="#" class="list-project__link">
                   <div class="list-project__img-cnt">
                     <img
@@ -128,7 +128,7 @@
                   <button class="btn btn--small">Look it up</button>
                 </a>
               </li>
-              <li class="list-project__item">
+              <li class="list-project__item animate__animated wow animate__fadeInRight" data-wow-delay="500ms">
                 <a href="#" class="list-project__link">
                   <div class="list-project__img-cnt">
                     <img
@@ -153,5 +153,9 @@
       @@include('html/_footer.htm',{})
     </div>
     @@include('html/_js.htm',{})
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+  </script>
   </body>
 </html>

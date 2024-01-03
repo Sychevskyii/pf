@@ -267,6 +267,7 @@
 //====================================================================================================
 .projects {
     background-color: $bgColor;
+    @include adaptiveValue("padding-bottom", 300, 100);
     &__container {
     }
 

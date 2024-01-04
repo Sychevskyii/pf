@@ -435,8 +435,8 @@
 }
 .lists-block {
     display: flex;
-    @include adaptiveValue("padding-left", 230, 40);
-    @include adaptiveValue("gap", 400, 30);
+    @include adaptiveValue("padding-left", 230, 45);
+    @include adaptiveValue("gap", 400, 25);
     @media (max-width: 767.98px) {
         flex-wrap: wrap;
     }

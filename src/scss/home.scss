@@ -462,3 +462,179 @@
         list-style: disc;
     }
 }
+//====================================================================================================
+// Section projects
+//====================================================================================================
+.about {
+    background-color: $bgColor;
+    @include adaptiveValue("padding-bottom", 300, 100);
+    @media (max-width: 1827.98px) {
+        padding-bottom: 1700px;
+    }
+    &__container {
+    }
+
+    &__title {
+        @include adaptiveValue("font-size", 64, 32);
+        @include adaptiveValue("margin-bottom", 138, 60);
+        font-weight: 600;
+    }
+
+    &__progress {
+    }
+}
+.progress-block {
+    width: 100%;
+    display: flex;
+    @include adaptiveValue("padding-left", 230, 45);
+    position: relative;
+
+    @media (max-width: 1827.98px) {
+        transform: rotate(90deg);
+        top: 650px;
+    }
+    &__date {
+        position: absolute;
+    }
+
+    &__date--first {
+        bottom: 35px;
+        left: 11%;
+    }
+
+    &__date--second {
+        bottom: 35px;
+        left: 41%;
+    }
+
+    &__date--third {
+        bottom: 35px;
+        left: 70%;
+    }
+
+    &__date--fourth {
+        bottom: 35px;
+        right: -2%;
+    }
+
+    &__line {
+        width: 100%;
+        height: 12px;
+        background-color: #fff;
+        position: relative;
+        // overflow: hidden;
+    }
+
+    &__point {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       border-radius: 50%;
+       background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+       z-index: 2;
+       overflow: hidden;
+    }
+
+    &__point--first {
+        animation-delay: 500ms;
+    }
+    &__point--second{
+        animation-delay: 1200ms;
+    }
+    &__point--third {
+        animation-delay: 1900ms;
+    }
+    &__point--fourth {
+        animation-delay: 2600ms;
+    }
+
+    &__step {
+        position: absolute;
+        height: 100%;
+        background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    }
+
+    &__step--first {
+        top: 0;
+        left: 0;
+        width: 33.33%;
+        animation-delay: 700ms;
+    }
+    &__step--second{
+        top: 0;
+        left: 33.33%;
+        width: 33.33%;
+        animation-delay: 1400ms;
+    }
+    &__step--third {
+        top: 0;
+        left: 66.66%;
+        width: 33.33%;
+        animation-delay: 2100ms;
+    }
+
+    &__dot {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+    }
+
+    &__dot--first {
+        top: -80%;
+        left: -1%;
+    }
+
+    &__dot--second {
+        top: -80%;
+        left: 33.33%;
+    }
+
+    &__dot--third {
+        top: -80%;
+        left: 66.66%;
+    }
+
+    &__dot--fourth {
+        top: -80%;
+        left: 99%;
+    }
+
+    &__text {
+        position: absolute;
+        text-align: center;
+        @include adaptiveValue("width", 340, 150);
+        @include adaptiveValue("font-size", 28, 16);
+        padding-right: 20px;
+        @media (max-width: 1827.98px) {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__text--first {
+        top: 30px;
+        left: 12%;
+        @media (max-width: 1827.98px) {
+            top: 650%;
+        }
+    }
+
+    &__text--second {
+        top: 30px;
+        left: 36%;
+        @media (max-width: 1827.98px) {
+            top: -1300%;
+        }
+    }
+
+    &__text--third {
+        top: 30px;
+        left: 60%;
+    }
+
+    &__text--fourth {
+        top: 30px;
+        left: 82%;
+    }
+}

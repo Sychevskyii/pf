@@ -89,18 +89,6 @@
         @include adaptiveValue("height", 100, 25);
     }
 
-    &__cell--small {
-        // @include adaptiveValue("width", 100, 50);
-    }
-
-    &__cell--middle {
-        // @include adaptiveValue("width", 160, 80);
-    }
-
-    &__cell--big {
-        // @include adaptiveValue("width", 200, 100);
-    }
-
     &__cell--1 {
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
@@ -345,6 +333,7 @@
 //====================================================================================================
 .skills {
     background-color: $bgColor;
+    @include adaptiveValue("padding-bottom", 300, 100);
     &__container {
     }
 
@@ -375,7 +364,6 @@
         background-color: #162950;
         border-radius: 83px;
         position: relative;
-        // overflow: hidden;
     }
 
     &__label {
@@ -446,9 +434,31 @@
     }
 }
 .lists-block {
+    display: flex;
+    @include adaptiveValue("padding-left", 230, 40);
+    @include adaptiveValue("gap", 400, 30);
+    @media (max-width: 767.98px) {
+        flex-wrap: wrap;
+    }
 }
 .add-skill-list {
+    display: flex;
+    flex-direction: column;
 
+    &--faster {
+        animation-duration: 1250ms;
+    }
+
+    &--fast {
+        animation-duration: 1750ms;
+    }
+
+    &--slow {
+        animation-duration: 2250ms;
+    }
+    @include adaptiveValue("gap", 32, 20);
     &__item {
+        @include adaptiveValue("font-size", 36, 16);
+        list-style: disc;
     }
 }

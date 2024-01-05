@@ -468,8 +468,8 @@
 .about {
     background-color: $bgColor;
     @include adaptiveValue("padding-bottom", 300, 100);
-    @media (max-width: 1827.98px) {
-        padding-bottom: 1700px;
+    @media (max-width: 767.98px) {
+        @include adaptiveValue("padding-bottom", 250, 100);
     }
     &__container {
     }
@@ -486,43 +486,65 @@
 .progress-block {
     width: 100%;
     display: flex;
+    flex-direction: column;
     @include adaptiveValue("padding-left", 230, 45);
     position: relative;
-
-    @media (max-width: 1827.98px) {
+    @media (max-width: 767.98px) {
         transform: rotate(90deg);
-        top: 650px;
+        @include adaptiveValue("padding-left", 530, 45);
     }
+    
+
+    &__wrapper-text {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        @media (max-width: 767.98px) {
+            column-gap: 120px;
+            padding-left: 60px;
+            flex-grow: 2;
+            width: 250px;
+            overflow: scroll;
+        }
+    }
+
+    &__wrapper-date {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
     &__date {
-        position: absolute;
+        @include adaptiveValue("font-size", 36, 18);
+        @media (max-width: 767.98px) {
+            transform: rotate(-90deg);
+            padding-right: 15px;
+        }
     }
 
     &__date--first {
-        bottom: 35px;
-        left: 11%;
+        
     }
 
     &__date--second {
-        bottom: 35px;
-        left: 41%;
+        
     }
 
     &__date--third {
-        bottom: 35px;
-        left: 70%;
+        
     }
 
     &__date--fourth {
-        bottom: 35px;
-        right: -2%;
+        
     }
 
     &__line {
         width: 100%;
-        height: 12px;
+        @include adaptiveValue("height", 12, 7);
         background-color: #fff;
         position: relative;
-        // overflow: hidden;
+        right: 15px;
+        
     }
 
     &__point {
@@ -574,8 +596,8 @@
     }
 
     &__dot {
-        width: 32px;
-        height: 32px;
+        @include adaptiveValue("width", 32, 20);
+        @include adaptiveValue("height", 32, 20);
         border-radius: 50%;
         background-color: #fff;
         position: absolute;
@@ -602,39 +624,29 @@
     }
 
     &__text {
-        position: absolute;
         text-align: center;
         @include adaptiveValue("width", 340, 150);
-        @include adaptiveValue("font-size", 28, 16);
+        @include adaptiveValue("font-size", 22, 16);
         padding-right: 20px;
-        @media (max-width: 1827.98px) {
+
+        @media (max-width: 767.98px) {
             transform: rotate(-90deg);
         }
     }
 
     &__text--first {
-        top: 30px;
-        left: 12%;
-        @media (max-width: 1827.98px) {
-            top: 650%;
-        }
+        
     }
 
     &__text--second {
-        top: 30px;
-        left: 36%;
-        @media (max-width: 1827.98px) {
-            top: -1300%;
-        }
+        
     }
 
     &__text--third {
-        top: 30px;
-        left: 60%;
+        
     }
 
     &__text--fourth {
-        top: 30px;
-        left: 82%;
+        
     }
 }

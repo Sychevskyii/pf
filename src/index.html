@@ -4,6 +4,7 @@
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
+      @@include('html/_popup.htm',{})
       <main class="page">
         <section class="hero">
           <div class="hero__container">
@@ -15,7 +16,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button class="btn animate__animated animate__fadeInDown">
+              <button data-popup="#popup" class="btn animate__animated animate__fadeInDown">
                 Let’s begin
               </button>
             </div>

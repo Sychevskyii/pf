@@ -1,10 +1,45 @@
 <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button data-close type="button" class="popup__close"></button>
+      <div class="popup__text">
+        <form
+          method="POST"
+          action="sendmail/sendmail.php"
+          enctype="multipart/form-data"
+          class="form"
+        >
+          <input
+            type="text"
+            placeholder="name"
+            name="name"
+            class="form__input"
+          />
+		  <input
+            type="email"
+            placeholder="E-mail"
+            name="email"
+            class="form__input"
+          />
+		  <div class="form__options options-form">
+			<h4 class="options-form__title">Do you want to work with me?</h4>
+			<label class="options-form__item">
+				<input checked type="radio" name="like" value="Yes!" class="options-form__input">
+				<span class="options-form__text">Yes!</span>
+			</label>
+			<label class="options-form__item">
+				<input checked type="radio" name="like" value="Yes of course!" class="options-form__input">
+				<span class="options-form__text">Yes of course!</span>
+			</label>
+		  </div>
+		  <textarea name="message" placeholder="Message" class="form__input"></textarea>
+		  <div class="form__file file-form">
+			<label class="file-form__item">
+				<input type="file" accept=".jpg .png .fig" class="file-form__input">
+			</label>
+		  </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

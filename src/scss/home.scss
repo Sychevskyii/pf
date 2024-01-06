@@ -9,6 +9,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 1127.98px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     }
 
     &__block {
@@ -60,7 +66,7 @@
 }
 
 .main-img {
-    @include adaptiveValue("width", 700, 240);
+    @include adaptiveValue("width", 700, 280);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,6 +78,8 @@
     @media (max-width: 767.98px) {
         right: -5px;
         bottom: -5px;
+        top: 62%;
+    left: 66%;
     }
 }
 
@@ -79,14 +87,19 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
     @include adaptiveValue("width", 610, 305);
+    @include adaptiveValue("height", 610, 305);
     transform: rotate(55deg);
-    @media (max-width: 767.98px) {
-        display: none;
-    }
+    // @media (max-width: 767.98px) {
+    //     display: none;
+    // }
     &__cell {
         display: block;
-        @include adaptiveValue("height", 100, 25);
+        height: 150px;
+        // @include adaptiveValue("height", 150, 103);
     }
 
     &__cell--1 {
@@ -97,7 +110,8 @@
         background-clip: content-box, border-box;
         animation-duration: 1140ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 100, 25);
+        flex-basis: 100px;
+        // @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--2 {
@@ -108,7 +122,8 @@
         background-clip: content-box, border-box;
         animation-duration: 1425ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--3 {
@@ -119,7 +134,8 @@
         background-clip: content-box, border-box;
         animation-duration: 1710ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--4 {
@@ -131,7 +147,8 @@
         background-clip: content-box, border-box;
         animation-duration: 1995ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 100, 25);
+        flex-basis: 100px;
+        // @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--5 {
@@ -142,7 +159,8 @@
         background-clip: content-box, border-box;
         animation-duration: 3050ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--6 {
@@ -153,7 +171,8 @@
         background-clip: content-box, border-box;
         animation-duration: 585ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 200, 80);
+        flex-basis: 200px;
+        // @include adaptiveValue("flex-basis", 200, 80);
     }
 
     &__cell--7 {
@@ -165,7 +184,8 @@
         background-clip: content-box, border-box;
         animation-duration: 2280ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--8 {
@@ -176,7 +196,8 @@
         background-clip: content-box, border-box;
         animation-duration: 3000ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 100, 25);
+        flex-basis: 100px;
+        // @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--9 {
@@ -187,7 +208,8 @@
         background-clip: content-box, border-box;
         animation-duration: 670ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 // 285
     &__cell--10 {
@@ -198,7 +220,8 @@
         background-clip: content-box, border-box;
         animation-duration: 855ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--11 {
@@ -210,7 +233,8 @@
         background-clip: content-box, border-box;
         animation-duration: 2565ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 100, 25);
+        flex-basis: 100px;
+        // @include adaptiveValue("flex-basis", 100, 25);
     }
 
     &__cell--12 {
@@ -222,7 +246,8 @@
         background-clip: content-box, border-box;
         animation-duration: 2950ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 
     &__cell--13 {
@@ -234,7 +259,8 @@
         background-clip: content-box, border-box;
         animation-duration: 2900ms;
         flex-grow: 2;
-        @include adaptiveValue("flex-basis", 200, 80);
+        flex-basis: 200px;
+        // @include adaptiveValue("flex-basis", 200, 80);
     }
 
     &__cell--14 {
@@ -247,7 +273,8 @@
         background-clip: content-box, border-box;
         animation-duration: 2850ms;
         flex-grow: 1;
-        @include adaptiveValue("flex-basis", 160, 55);
+        flex-basis: 160px;
+        // @include adaptiveValue("flex-basis", 160, 55);
     }
 }
 //====================================================================================================

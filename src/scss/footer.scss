@@ -1,3 +1,55 @@
 //====================================================================================================
+.footer {
+    background-color: $bgColor;
+    @include adaptiveValue("padding-bottom", 80, 40);
+    &__container {
+    }
+
+    &__socials {
+        margin-top: 0;
+    }
+}
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue("padding-left", 230, 45);
+
+    @media (max-width: 767.98px) {
+        @include adaptiveValue("padding-top", 250, 20);
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+        @include adaptiveValue("font-size", 28, 17);
+        &:hover {
+            color: #13ADC7;
+
+            .contacts-block__icon {
+                fill: #13ADC7;
+            }
+        }
+    }
+
+    &__icon {
+        fill: #fff;
+        transition: fill 0.3s ease;
+    }
+}
+.socials {
+
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__icon {
+    }
+}
 
 //====================================================================================================

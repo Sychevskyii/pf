@@ -68,8 +68,8 @@
 .main-img {
     @include adaptiveValue("width", 700, 280);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 53%;
+    left: 53%;
     z-index: 2;
     transform: translate(-50%, -50%) rotate(-55deg);
     padding-bottom: 130px;
@@ -78,8 +78,8 @@
     @media (max-width: 767.98px) {
         right: -5px;
         bottom: -5px;
-        top: 62%;
-        left: 66%;
+        top: 65%;
+        left: 73%;
     }
 }
 

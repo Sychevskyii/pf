@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Sychevskyi</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240107170320">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="200" data-scroll-show class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo logo" data-goto=".hero"><picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Logo" class="logo__img" /></picture>Sychev<span>sky</span>i</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link" data-goto=".projects" data-goto-top="50px">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link" data-goto=".skills" data-goto-top="50px">Technologies</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link" data-goto=".about" data-goto-top="50px">About me</a>
+							</li>
+						</ul>
+						<ul class="header__socials socials">
+							<li class="socials__item">
+								<a href="https://github.com/Sychevskyii" target="blank" class="socials__link"><svg class="socials__icon" width="32" height="32">
+										<use href="img/icons/icons.svg#git"></use>
+									</svg></a>
+							</li>
+							<li class="socials__item">
+								<a href="https://www.linkedin.com/in/ivan-sychevskyi-432369258/" target="blank" class="socials__link"><svg class="socials__icon" width="32" height="32">
+										<use href="img/icons/icons.svg#linkedin"></use>
+									</svg></a>
+							</li>
+							<li class="socials__item">
+								<a href="https://t.me/sychevskyi" target="blank" class="socials__link"><svg class="socials__icon" width="32" height="32">
+										<use href="img/icons/icons.svg#telegram"></use>
+									</svg></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">
+						<form method="POST" action="sendmail/sendmail.php" enctype="multipart/form-data" class="form">
+							<input required type="text" placeholder="Your name" name="name" class="form__input" />
+							<input required type="email" placeholder="E-mail" name="email" class="form__input" />
+							<div class="form__options options-form">
+								<h4 class="options-form__title">Do you want to work with me?</h4>
+								<label class="options-form__item">
+									<input checked type="radio" name="like" value="Yes!" class="options-form__input" />
+									<span class="options-form__text">Yes!</span>
+								</label>
+								<label class="options-form__item">
+									<input checked type="radio" name="like" value="Yes of course!" class="options-form__input" />
+									<span class="options-form__text">Yes of course!</span>
+								</label>
+							</div>
+							<textarea name="message" placeholder="Message" class="form__input form__textarea"></textarea>
+							<div class="form__file file-form">
+								<label class="file-form__item">
+									<input type="file" accept="jpg png fig" class="file-form__input" />
+									<div class="file-form__button">Choose File</div>
+								</label>
+								<div class="file-form__name"></div>
+							</div>
+							<label class="form__checkbox checkbox-form">
+								<input required type="checkbox" name="thebest" class="checkbox-form__input" />
+								<span class="checkbox-form__text">
+									I agree to easy and productive work!</span>
+							</label>
+							<button class="form__button btn">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__block">
+						<h1 class="hero__title animate__animated animate__fadeInDown">
+							Lorem ipsum dolor sit amet
+						</h1>
+						<p class="hero__text animate__animated animate__fadeInDown">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<button data-popup="#popup" class="btn animate__animated animate__fadeInDown">
+							Let’s begin
+						</button>
+					</div>
+					<div class="net">
+						<picture><source srcset="img/hero/main-image.webp" type="image/webp"><img src="img/hero/main-image.png" class="main-img animate__animated animate__fadeIn" alt="A man" /></picture>
+						<span class="net__cell net__cell--small net__cell--1 animate__animated animate__fadeInDown"></span>
+						<span class="net__cell net__cell--middle net__cell--2 animate__animated animate__fadeInDown"></span>
+						<span class="net__cell net__cell--middle net__cell--3 animate__animated animate__fadeInDown"></span>
+						<span class="net__cell net__cell--small net__cell--4 animate__animated animate__fadeInDown"></span>
+						<span class="net__cell net__cell--middle net__cell--5 animate__animated animate__fadeInLeft"></span>
+						<span class="net__cell net__cell--big net__cell--6 animate__animated animate__fadeInDown"></span>
+						<span class="net__cell net__cell--middle net__cell--7 animate__animated animate__fadeInRight"></span>
+						<span class="net__cell net__cell--small net__cell--8 animate__animated animate__fadeInLeft"></span>
+						<span class="net__cell net__cell--middle net__cell--9 animate__animated animate__fadeInUp"></span>
+						<span class="net__cell net__cell--middle net__cell--10 animate__animated animate__fadeInUp"></span>
+						<span class="net__cell net__cell--small net__cell--11 animate__animated animate__fadeInRight"></span>
+						<span class="net__cell net__cell--middle net__cell--12 animate__animated animate__fadeInLeft"></span>
+						<span class="net__cell net__cell--big net__cell--13 animate__animated animate__fadeInUp"></span>
+						<span class="net__cell net__cell--middle net__cell--14 animate__animated animate__fadeInRight"></span>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				<div class="projects__container">
+					<h2 class="projects__title">Projects</h2>
+					<ul class="projects__list list-project">
+						<li class="list-project__item animate__animated wow animate__fadeInLeft" data-wow-delay="250ms">
+							<a href="#" class="list-project__link">
+								<div class="list-project__img-cnt">
+									<picture><source srcset="img/projects/project1.webp" type="image/webp"><img src="img/projects/project1.png" alt="" class="list-project__img" /></picture>
+								</div>
+								<h3 class="list-project__label">IceCream</h3>
+								<p class="list-project__text">
+									A website about the details of the production of the world's best ice cream.
+								</p>
+								<button class="btn btn--small">Look it up</button>
+							</a>
+						</li>
+						<li class="list-project__item animate__animated wow animate__fadeInRight" data-wow-delay="500ms">
+							<a href="#" class="list-project__link">
+								<div class="list-project__img-cnt">
+									<picture><source srcset="img/projects/project2.webp" type="image/webp"><img src="img/projects/project2.png" alt="" class="list-project__img" /></picture>
+								</div>
+								<h3 class="list-project__label">Themebau</h3>
+								<p class="list-project__text">
+									A creative photography studio that focuses on speed and quality.
+								</p>
+								<button class="btn btn--small">Look it up</button>
+							</a>
+						</li>
+						<li class="list-project__item animate__animated wow animate__fadeInLeft" data-wow-delay="500ms">
+							<a href="#" class="list-project__link">
+								<div class="list-project__img-cnt">
+									<picture><source srcset="img/projects/project3.webp" type="image/webp"><img src="img/projects/project3.png" alt="" class="list-project__img" /></picture>
+								</div>
+								<h3 class="list-project__label">WebStudio</h3>
+								<p class="list-project__text">
+									A web studio capable of making effective and quick decisions to improve your business.
+								</p>
+								<button class="btn btn--small">Look it up</button>
+							</a>
+						</li>
+						<li class="list-project__item animate__animated wow animate__fadeInRight" data-wow-delay="500ms">
+							<a href="#" class="list-project__link">
+								<div class="list-project__img-cnt">
+									<picture><source srcset="img/projects/project4.webp" type="image/webp"><img src="img/projects/project4.png" alt="" class="list-project__img" /></picture>
+								</div>
+								<h3 class="list-project__label">Funiro</h3>
+								<p class="list-project__text">
+									A website about arranging home comfort.
+									It is better not to come up with it.
+								</p>
+								<button class="btn btn--small">Look it up</button>
+							</a>
+						</li>
+						<li class="list-project__item animate__animated wow animate__fadeInLeft" data-wow-delay="500ms">
+							<a href="#" class="list-project__link">
+								<div class="list-project__img-cnt">
+									<picture><source srcset="img/projects/project5.webp" type="image/webp"><img src="img/projects/project5.png" alt="" class="list-project__img" /></picture>
+								</div>
+								<h3 class="list-project__label">FarmVest</h3>
+								<p class="list-project__text">
+									Investment company website. Think about your future!
+								</p>
+								<button class="btn btn--small">Look it up</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="skills">
+				<div class="skills__container">
+					<h2 class="skills__title">Technologies</h2>
+					<ul class="skills__list list-skills">
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">Html</h3>
+							<p class="list-skills__level">Advanced</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--faster animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">CSS, Sass</h3>
+							<p class="list-skills__level">Advanced</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--fast animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">JavaScript</h3>
+							<p class="list-skills__level">Advanced</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--low-fast animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">UI design</h3>
+							<p class="list-skills__level">Regular</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--slow list-skills__progress--middle animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">Angular</h3>
+							<p class="list-skills__level">Beginner</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--slower list-skills__progress--low animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">React</h3>
+							<p class="list-skills__level">Beginner</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--low-slow list-skills__progress--low animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+						<li class="list-skills__item">
+							<h3 class="list-skills__label">React Native</h3>
+							<p class="list-skills__level">Beginner</p>
+							<div class="list-skills__progress-item">
+								<span class="list-skills__progress list-skills__progress--very-slow list-skills__progress--low animate__animated wow animate__fadeInLeftBig"></span>
+							</div>
+						</li>
+					</ul>
+					<h2 class="skills__subtitle">Additional technologies and skills</h2>
+					<div class="lists-block">
+						<ul class="add-skill-list add-skill-list--faster animate__animated wow animate__fadeInUp">
+							<li class="add-skill-list__item">Git</li>
+							<li class="add-skill-list__item">Quick learning</li>
+							<li class="add-skill-list__item">RWD</li>
+						</ul>
+						<ul class="add-skill-list add-skill-list--fast animate__animated wow animate__fadeInUp">
+							<li class="add-skill-list__item">Wordpress</li>
+							<li class="add-skill-list__item">Engagement</li>
+						</ul>
+						<ul class="add-skill-list add-skill-list--slow animate__animated wow animate__fadeInUp">
+							<li class="add-skill-list__item">Teamwork</li>
+							<li class="add-skill-list__item">B2 english</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<h2 class="about__title">About me</h2>
+					<div class="about__progress progress-block">
+						<div class="progress-block__wrapper-date">
+							<p class="progress-block__date progress-block__date--first animate__animated wow animate__fadeInDown">
+								2021
+							</p>
+							<p class="progress-block__date progress-block__date--second animate__animated wow animate__fadeInDown">
+								2022
+							</p>
+							<p class="progress-block__date progress-block__date--third animate__animated wow animate__fadeInDown">
+								2023
+							</p>
+							<p class="progress-block__date progress-block__date--fourth animate__animated wow animate__fadeInDown">
+								2024
+							</p>
+						</div>
+						<span class="progress-block__line">
+							<span class="progress-block__dot progress-block__dot--first"><span class="progress-block__point progress-block__point--first animate__animated wow animate__bounceIn "></span></span>
+							<span class="progress-block__step progress-block__step--first animate__animated wow animate__flipInX"></span>
+							<span class="progress-block__dot progress-block__dot--second"><span class="progress-block__point progress-block__point--second animate__animated wow animate__bounceIn"></span></span>
+							<span class="progress-block__step progress-block__step--second animate__animated wow animate__flipInX"></span>
+							<span class="progress-block__dot progress-block__dot--third"><span class="progress-block__point progress-block__point--third animate__animated wow animate__bounceIn"></span></span>
+							<span class="progress-block__step progress-block__step--third animate__animated wow animate__flipInX"></span>
+							<span class="progress-block__dot progress-block__dot--fourth"><span class="progress-block__point progress-block__point--fourth animate__animated wow animate__bounceIn"></span></span>
+						</span>
+						<div class="progress-block__wrapper-text">
+							<p class="progress-block__text progress-block__text--first animate__animated wow animate__fadeInUp">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<p class="progress-block__text progress-block__text--second animate__animated wow animate__fadeInUp">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<p class="progress-block__text progress-block__text--third animate__animated wow animate__fadeInUp">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<p class="progress-block__text progress-block__text--fourth animate__animated wow animate__fadeInUp">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="contacts-block">
+					<a href="#" class="contacts-block__link">Text to me in telegram<svg class="contacts-block__icon" width="32" height="32">
+							<use href="img/icons/icons.svg#telegram"></use>
+						</svg></a>
+					<ul class="footer__socials socials">
+						<li class="socials__item">
+							<a href="" class="socials__link"><svg class="socials__icon" width="32" height="32">
+									<use href="img/icons/icons.svg#git"></use>
+								</svg></a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link"><svg class="socials__icon" width="32" height="32">
+									<use href="img/icons/icons.svg#linkedin"></use>
+								</svg></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20240107170320"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?_v=20240107170320"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+
+</html>
